@@ -1,16 +1,82 @@
 <html>
 <head>
+<style>
+
+body {
+  font-family: Georgia, serif;
+  padding-top: 2em;
+}
+
+h2, ul {
+  margin-bottom: 0.5em;
+  margin-top: 0.5em;
+}
+
+.container {
+  width: 960px;
+  margin: 0 auto;
+}
+
+.clearfix {
+  clear: both;
+}
+
+.clearfix:after{
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden;
+  font-size: 0;
+}
+
+.left {
+  width: 400px;
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.headshot {
+  width: 544px;
+  height: 428px;
+  background-image: url(/headshot.jpg);
+  border-radius: 10px ;
+  -webkit-box-shadow: inset 0 0 20px rgba(255,255,255,0.5);
+}
+
+</style>
 </head>
 <body>
-<h1>Timothy Fitz</h1>
-<img src="/headshot.jpg" />
-<ul>
-<li>(650) 996-7228</li>
-<li><a href="mailto:TimothyFitz@gmail.com">TimothyFitz@gmail.com</a></li>
-<li><a href="http://timothyfitz.wordpress.com">blog</a></li>
-<li><a href="http://twitter.com/TimothyFitz">twitter</a></li>
-<li><a href="http://www.facebook.com/profile.php?id=24412051">facebook</a></li>
-<li><a href="http://github.com/TimothyFitz">github</a></li>
-</ul>
+<div class="container clearfix">
+  <div class="left">
+    <h1>Timothy Fitz</h1>
+    <h2>About</h2>
+    <p>Timothy Fitz coined and popularized Continuous Deployment.
+    He previously was the Chief Technology Officer of <a href="http://canv.as/">Canv.as</a>, and prior to that was a Technical Lead at <a href="http://imvu.com/about">IMVU</a>, the original <a href="http://theleanstartup.com/">Lean Startup</a>.</p>
+    <h2>Looking For</h2>
+    <ul>
+      <li>part time in-office consulting</li>
+      <li>remote development contracts</li>
+    </ul>
+    <h2>Elsewhere</h2>
+    <ul>
+      <li><a href="http://timothyfitz.wordpress.com">blog</a></li>
+      <li><a href="http://twitter.com/TimothyFitz">twitter</a></li>
+      <li><a href="http://www.facebook.com/profile.php?id=24412051">facebook</a></li>
+      <li><a href="http://github.com/TimothyFitz">github</a></li>
+    </ul>
+    <h2>Contact Info</h2>
+    <ul>
+      <li><a href="mailto:TimothyFitz@gmail.com">TimothyFitz@gmail.com</a></li>
+      <li>(650) 996-7228</li>
+    </ul>
+  </div>
+  <div class="right">
+    <div class="headshot"></div>
+  </div>
+</div>
 <body>
 </html>
