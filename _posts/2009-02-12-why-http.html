@@ -1,0 +1,75 @@
+--- 
+layout: post
+title: Why HTTP?
+tags: []
+
+status: publish
+type: post
+published: true
+meta: 
+  _edit_last: "6738078"
+---
+Why HTTP?
+
+The world doesn't need another arbitrary binary protocol. Just use HTTP. Your life will be simpler. Originally this came up when scaling a gaggle of MySQL machines. I would have killed for a reliable proxy. It's with this in mind that I've come up with my list of things that HTTP has that an arbitrary protocol will have to rebuild. Anytime you choose to use a service based on a non-HTTP protocol, look over this list and think carefully about what you're giving up.
+
+1. Servers in any language.
+2. Clients in any language.
+
+These two are obvious. Moving right along.
+
+3. Proxies
+
+There are rock solid drop-in software solutions for proxying traffic from one machine to another. These proxies can do all types of request or response rewriting.
+
+4. Load balancers
+
+Need to scale past one machine? Need higher reliability? Drop a load balancer in front of multiple machines and you have a transparent barrier around the complexity of scaling up a service.
+
+5. Debugging tools
+
+There are no problems that have not yet been encountered. In fact, there are probably tools for diagnosing every malady you will ever encounter.
+
+6. Web browsers
+
+You already have a client, you're using it right now. You can use it to poke at APIs.
+
+7. People
+
+Everyone knows HTTP. Quite a few people know more about it than you ever will. You can always reach out for help, or get contractors to solve problems.
+
+8. Guaranteed web access
+
+Corporate proxies and weird ISPs cause all kinds of havoc for things that aren't HTTP. Being HTTP means you sidestep those problems.
+
+9. Extensive hardware
+
+If you're high traffic or need extremely high uptime, you're going to outgrow most software solutions. When you step up to the big time, hardware vendors will be there to support you.
+
+10. Known scalability paths
+
+Not only are there software solutions to allow easy migrations to more scalable architectures, but there are also easy patterns for designing a backend to scale up servicing HTTP's stateless request-responses.
+
+11. Prior knowledge
+
+You already know HTTP. Your coworkers already know HTTP. You can start working on the harder problems at hand.
+
+12. Extensibility
+
+Between HTTP verbs and headers you have quite a bit of freedom to extend your original schemes. Need an extra piece of data? Add a header. Have pieces of information but want to be able to remove them? Use HTTP DELETE. Run into a really hairy problem that really wants a piece of it to be solved in a different protocol? Use HTTP protocol switching.
+
+13. URLs
+
+Using HTTP allows you to use a standard way of referencing resources. Parsers already exist for every language and their semantics are well understood.
+
+14. Security
+
+HTTPS gives you baked in easy to use security. It has its limitations, but if you're really paranoid you can always use SSH and a SOCKS proxy. Once again, HTTP has your back. (Forgot to include this, thanks Daren Thomas for pointing it out!)
+
+In the end the rules are simple. Is it possible to do over HTTP? Then do it over HTTP.
+
+I'm not exactly defending an unpopular position, but there are still surprising transgressions of this rule. XMPP being the most obvious one. It's quite a bit more complex than HTTP and is missing most of the above qualities. It's usually cited as an example of a protocol that solves a problem http can't: asynchronous bidirectional messaging; allowing the server and the client to send messages with minimal lag. The truth is HTTP can do this just fine, with long-polling and HTTP keep-alive you can keep a persistent bidirectional connection open.
+
+There are an ever slimming number of commonly used protocols that aren't http: instant messaging, e-mail, irc and ftp come to mind.
+
+Move a service to HTTP, and it becomes a team <a href="http://timothyfitz.wordpress.com/2009/02/09/what-webhooks-are-and-why-you-should-care/">player</a> in our ecosystem. Let's revolutionize the last of our dinosaur protocols and move on.

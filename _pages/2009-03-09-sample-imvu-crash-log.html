@@ -1,0 +1,305 @@
+--- 
+layout: page
+title: Sample IMVU Crash Log
+tags: []
+
+status: publish
+type: page
+published: true
+meta: 
+  _edit_last: "6738078"
+---
+<pre>Summary: IMVU crash | 2009-03-09 02:30:28 | v403.40 | bugKeyd81d24b8 | Timothy(6441221)
+Traceback (most recent call last):
+File "main\clientapp.pyo", line 2275, in runClientApp
+File "main\clientapp.pyo", line 2217, in runMainLoop
+File "main\clientapp.pyo", line 2207, in _runMainLoop
+File "main\clientapp.pyo", line 2003, in step
+File "main\clientapp.pyo", line 2040, in __profiledStep
+File "main\clientapp.pyo", line 1399, in __step
+File "main\buddywindow.pyo", line 343, in step
+File "main\buddywindow.pyo", line 754, in __processEvents
+File "main\buddywindow.pyo", line 763, in __processEvent
+File "main\buddywindow.pyo", line 125, in &lt;lambda&gt;
+File "main\menu.pyo", line 241, in dispatchCommand
+StructuredException: EXCEPTION_ACCESS_VIOLATION(c0000005)
+Parameters: [0x1, 0x0]
+(boost_python#3ace214f1fa349e78f20de38e87ce06a1!000128c0, pc=010728c0)
+(_avatarwindow#e42cf009f3e84e20853059644879c43b1!0001fcaf, pc=014bfcaf)
+(_avatarwindow#e42cf009f3e84e20853059644879c43b1!0001f1f7, pc=014bf1f7)
+(boost_python#3ace214f1fa349e78f20de38e87ce06a1!00012bd7, pc=01072bd7)
+(boost_python#3ace214f1fa349e78f20de38e87ce06a1!0000cf07, pc=0106cf07)
+(boost_python#3ace214f1fa349e78f20de38e87ce06a1!0000cd72, pc=0106cd72)
+(_avatarwindow#e42cf009f3e84e20853059644879c43b1!0001903a, pc=014b903a)
+--</pre>
+<pre>Avatar name: Timothy
+User ID: 6441221
+Session ID: 4677462
+Previous Session ID: 4677462</pre>
+<pre>Process:
+Executable:        C:\Documents and Settings\Timothy\Application Data\IMVUClient\IMVUClient.exe
+Current directory: C:\Documents and Settings\Timothy\Application Data\IMVUClient
+Running since:     03/09/09 09:29:46</pre>
+<pre>Windows:
+Version:       Windows XP (Service Pack 2) (Build 2600)
+Running since: 2009-03-03 01:47:54.547000</pre>
+<pre>Memory:
+Used physical memory: 77% of 2 GiB
+Used virtual memory:  60% of 2.6 GiB
+Used address space:   14% of 2 GiB
+--
+Working set size: 95.15 MiB (peak 95.3 MiB)
+Page file usage:  88.67 MiB (peak 89.64 MiB)
+Paged pool:       90.93 KiB (peak 98.4 KiB)
+Nonpaged pool:    21.76 KiB (peak 22.84 KiB)
+--
+CommitTotal:        1.56 GiB
+CommitLimit:        2.6 GiB
+CommitPeak:         1.56 GiB
+PhysicalTotal:      2 GiB
+PhysicalAvailable:  473.54 MiB
+SystemCache:        555.41 MiB
+KernelTotal:        80.43 MiB
+KernelPaged:        57.88 MiB
+KernelNonpaged:     22.55 MiB
+Total processes:    70
+Total threads:      676
+Total open handles: 17739</pre>
+<pre>Display:
+DeviceName: NV4_DISP
+Resolution: 1680x1050x32 (60 Hz)
+--
+Direct3D Adapter 0
+Driver        : nv4_disp.dll
+Description   : NVIDIA GeForce 7800 GT
+DriverVersion : 6.14.10.9147
+VendorId      : 4318
+DeviceId      : 146
+SubSysId      : 0
+Revision      : 161
+DeviceGUID    : {D7B71E3E-43D2-11CF-0B40-0A2000C2CB35}
+WHQLLevel     : Signed (no date)
+--
+Device 0 = "NVIDIA GeForce 7800 GT" (AttachedToDesktop, ModesPruned, PrimaryDevice)
+Device 1 = "NetMeeting driver" (MirroringDriver)
+Device 2 = "RDPDD Chained DD" (MirroringDriver)</pre>
+<pre>Processing Windows Message: 275</pre>
+<pre>Unresponsive when closed: False
+Windows open: 0
+Window has been opened this session: False
+Window has ever been opened: True
+Windows open last session: 29
+Thread count: 13
+['ThreadPool(01):&lt;bound method DiskCacheSave.main of &lt;cache.cachetools.DiskCacheSave instance at 0x0263CE40&gt;&gt;',
+'ThreadPool(04)',
+'ThreadPoolMonitor',
+'ThreadPool(08)',
+'ThreadPool(03)',
+'ThreadPool(09)',
+'ThreadPool(02)',
+'ThreadPool(00)',
+'MainThread',
+'ThreadPool(07):threadtask:checkForInvite2',
+'ThreadPool(05)',
+'ThreadPool(06)',
+'Thread-1']</pre>
+<pre>=== hardware info ===
+CpuNameAndSpeed: Intel(R) Core(TM)2 CPU          6300  @ 1.86GHz, ~1868 Mhz</pre>
+<pre>SystemMemory: 2048
+VideoCardName: NVIDIA GeForce 7800 GT
+VideoCardMemory: 256
+cpudesc: INTELP=3 AMD=000 PPRO=1 MMX=1 SSE=1 SSE2=1 3DNOW=0 ARCH=00 LEVEL=06 NCPU=02 MHZ=01868 RAM=2047
+WindowsVersion: NT-platform, version 5.1, build 2600, Service Pack 2</pre>
+<pre>=== Log file: C:\Documents and Settings\Timothy\Application Data\IMVU\IMVULog.log ===
+.imvu.com/imvufiles/widgets/TextChat_10.swf', 'client.publicroom.enable_lobby_fafmessages': '1', 'client.prefetch_fafurl.1': 'http://www.imvu.com/catalog/web_client_help.php?topic=room_intro_help', 'client.prefetch_fafurl.0': 'http://www.imvu.com/catalog/web_client_help.php?topic=cheatsheet_rooms', 'client.swfThingsToDoUrl': 'http://www.imvu.com/swf/ThingsToDoPanel_apChatNow_20090119.swf', 'client.rateachat.promptUrl': 'http://www.imvu.com/rateachat/rateachat_jewels.php', 'client.rateachat.notificationUrl': 'http://www.imvu.com/rateachat/rateachat_jewels.php', 'client.swfTextChatUrl': 'http://www.imvu.com/swf/TextChat-2008-09-23.swf?thingstodo=1&amp;inventory=1', 'client.widgetSpaceUrl': 'http://www.imvu.com/swf/WidgetSpace.php', 'client.swfFlashTutorial': 'http://www.imvu.com/swf/Tutorial-2008-09-11.swf', 'client.shop.url': 'client_shop', 'client.session_dual_writes': '1', 'client.swfTextChatUrl\t': 'http://www.imvu.com/swf/TextChat-2008-07-17.swf', 'client.publicroom.client_version_cutoff': '0', 'client.flash_ui_widgets': 'CameraWidget', 'client.showInventoryFooter': '', 'client.session_read_from_reporting': '1', 'client.rateachat.promptTimeout': '1800', 'client.sound_limit_enforcement_id': '2658155', 'client.swfTextChatUrl \t\t\t\t': 'http://www.imvu.com/swf/TextChat-2008-06-13.swf', 'client.swfUrl.PrivilegedWidgetAggregator': 'http://www.imvu.com/swf/PrivilegedWidgetAggregator-2008-09-15.swf'}, 'hasAccessPass': '1', 'wealth_predits': '0', 'rateachatMembership': True, 'shouldShowMusic': 1, 'uiskin': '2224850', 'previewer_update_info': {'url': 'http://www.imvu.com/installers/InstallPreviewer_372.9-20070514.exe', 'required': True, 'release_notes': ''}, 'client_update_info': {'url': 'http://static.imvu.com/imvufiles/installers/InstallIMVU_409.24.exe', 'required': False, 'release_notes': 'Release Candidate\n- Fix a set of crashes that could be caused by bad chat data.'}, 'picUrl': 'http://userimages.imvu.com/catalog/includes/modules/phpbb2/images/avatars/6441221_7638431246a56bec8f651.jpg', 'newbieClientUI': 0, 'has_dressup_pass': '1', 'wealth': 290335, 'hasVIPPass': 1, 'look': ['136', '191', '12773', '651165', '1225065', '1942027', '2087321'], 'show_flash_tips': 1, 'room': 612801, 'dob': '1985-08-13', 'has_done_coop_anim': 1, 'age': '23', 'soloRoom': 612801, 'showInventoryTabOnStart': False, 'prefDefaults': {'useTextChat': True}, 'isGuest': 0, 'registrarId': 39}</pre>
+<pre>20.062 2708*            account.pyo( 506)   ERROR: Error setting pref useTextChat to True
+Traceback (most recent call last):
+File "imvu\account.pyo", line 504, in setLoginCredentials (emailOrAvatar='Timothy', password='...', prefService=&lt;main.prefs.PrefServ...01138930&gt;, self=&lt;imvu.account.UserAc...0254CFA8&gt;)
+File "main\prefs.pyo", line 217, in setPrefDefault (default=True, name='useTextChat', self=&lt;main.prefs.PrefServ...01138930&gt;)
+KeyError: 'useTextChat'
+20.187 2708*          clientapp.pyo( 369)    INFO: User access pass status differs from last run, flushing product authorization disk cache
+20.187 2708*          clientapp.pyo(1653)    INFO: Client update is available
+20.187 2708*             dialog.pyo( 689)    INFO: YesNoDialog created with title 'Update Available', prompt 'An update is available.  Update now?\n\nRelease notes:\nRelease Candidate\n- Fix a set of crashes that could be caused by bad chat data.', dimensions (180, 140)
+20.203 2708*             dialog.pyo( 823)    INFO: &lt;win32.dialog.YesNoDialog object at 0x0258BB90&gt; _DoSize: cx = 270, cy = 228, w = 278, h = 262
+20.203 2708*             dialog.pyo( 823)    INFO: &lt;win32.dialog.YesNoDialog object at 0x0258BB90&gt; _DoSize: cx = 270, cy = 228, w = 278, h = 262
+20.250 3528  xmlrpclib_multicall.pyo( 106)    INFO: --&gt; MultiCall test.showInventory(6441221, [495], False)
+20.265 2708*            account.pyo( 317)    INFO: notifyClientSessionEvent(): blocking: False event: {'memory_stats': {'native_thread_count': 23, 'native_object_count': 237, 'python_object_count': 54059, 'python_thread_count': 12, 'python_garbage_count': 0}, 'event_type': 'session_ping'}
+20.265 2708* xmlrpclib_multicall.pyo( 106)    INFO: --&gt; MultiCall test.notifyClientSessionEvent(6441221, '4677462', {'event_type': 'session_ping', 'memory_stats': {'native_object_count': 237, 'native_thread_count': 23, 'python_garbage_count': 0, 'python_object_count': 54059, ...}})
+20.906 3904  xmlrpclib_transport.pyo( 304)    INFO: XMLRPC starting to receive 172 bytes of data
+20.906 3904  xmlrpclib_multicall.pyo(  46)    INFO: &lt;-- MultiCall test.notifyClientSessionEvent(6441221, '4677462', {'event_type': 'session_ping', 'memory_stats': {'native_object_count': 237, 'native_thread_count': 23, 'python_garbage_count': 0, 'python_object_count': 54059, ...}}) returned 1
+21.015 2480  xmlrpclib_transport.pyo( 304)    INFO: XMLRPC starting to receive 1276 bytes of data
+21.031 2480  xmlrpclib_multicall.pyo(  46)    INFO: &lt;-- MultiCall test.showInventory(6441221, [495], False) returned ['80', '136', '167', '182', '189', '191', ...]
+21.031 2708*              event.pyo(  70)    INFO: fire: &lt;main.inventory.InventoryState object at 0x0259E770&gt; InventoryChanged {}
+21.047 2636  xmlrpclib_multicall.pyo( 106)    INFO: --&gt; MultiCall test.inventoryProductBatch([793645, 3194016])
+21.672 4028  xmlrpclib_transport.pyo( 304)    INFO: XMLRPC starting to receive 1767 bytes of data
+21.672 4028  xmlrpclib_multicall.pyo(  46)    INFO: &lt;-- MultiCall test.inventoryProductBatch([793645, 3194016]) returned [{'cPath': '107_1027_1530', 'manufacturers_id': 39, 'manufacturers_name': 'IMVU inc.', 'products_bundle': '', ...}, {'cPath': '495_778', 'manufacturers_id': 7093450, 'manufacturers_name': 'Deliverance', 'products_bundle': '', ...}]
+21.687 3528  xmlrpclib_multicall.pyo( 106)    INFO: --&gt; MultiCall test.inventoryCategoryBatch([778])
+22.281 2480  xmlrpclib_transport.pyo( 304)    INFO: XMLRPC starting to receive 394 bytes of data
+22.281 2480  xmlrpclib_multicall.pyo(  46)    INFO: &lt;-- MultiCall test.inventoryCategoryBatch([778]) returned [{'categories_id': 778, 'categories_name': 'FLASH stickers'}]
+22.281 2708*              event.pyo(  70)    INFO: fire: &lt;main.inventory.InventoryState object at 0x0259E770&gt; InventoryChanged {}
+22.312 2708*          inventory.pyo( 131)    INFO: Updating entire inventory state took 2.09299993515 seconds
+22.906 2708*          clientapp.pyo(1665)    INFO: Update declined
+22.984 2708*          clientapp.pyo(1815)    INFO: resetMeetSession activity='Chat now! (18+) (39) rateachat'
+22.984 2708*               meet.pyo(  79)    INFO: &lt;MeetSomeoneSession DirectConnect: instance 2, userId 6441221, chat None&gt;: creating new session
+22.984 2708*          clientapp.pyo( 472)    INFO: ClientApp::showInitial3dWindow
+23.000 2708*    simpledictcache.pyo( 175)    INFO: readFromFile(): filename: 'flashData6441221.pickle'
+23.000 2708*        weblistener.pyo(  21)    INFO: Creating WebListener from url: http://www.imvu.com/client.php?page=weblistener
+23.219 2708*        weblistener.pyo(  33)    INFO: Playing WebListener flashContext
+23.219 2708*          clientapp.pyo(1421)    INFO: clientapp creating buddyState
+23.219 2708*          clientapp.pyo(1426)    INFO: clientapp creating buddyWindow
+23.219 2708*        buddywindow.pyo(  70)    INFO: BuddyWindow constructor
+23.219 2708*        buddywindow.pyo(  83)    INFO: BuddyWindow getting desktop rect
+23.219 2708*        buddywindow.pyo(  85)    INFO: BuddyWindow creating c++ window
+23.375 2708*        buddywindow.pyo(  87)    INFO: BuddyWindow setting c++ window avatarname
+23.375 2708*        buddywindow.pyo(  89)    INFO: BuddyWindow creating AdSpace
+23.375 2708*        buddywindow.pyo(  97)    INFO: BuddyWindow creating InventoryPanel
+23.390 2708*        buddywindow.pyo( 109)    INFO: BuddyWindow maybe centering window
+23.390 2708*        buddywindow.pyo( 114)    INFO: BuddyWindow set up event handlers
+23.390 2708*        buddywindow.pyo( 137)    INFO: BuddyWindow registering listeners
+23.406 2708*          clientapp.pyo( 248)    INFO: Starting IMVUQualityAgent
+23.437 2708*          clientapp.pyo(2273)    INFO: Starting main loop
+23.437 2708*            account.pyo(1030)    INFO: requestGetImageAd: onComplete &lt;bound method AdSpace.__updateAdSpaceFromParams of &lt;main.adspace.AdSpace object at 0x02794D30&gt;&gt;
+23.437 2708* xmlrpclib_multicall.pyo( 106)    INFO: --&gt; MultiCall test.getImageAd(6441221)
+23.437 2708*            account.pyo( 924)    INFO: getBuddyState(): user_id: 6441221 current_availability: 'DoNotDisturb'
+23.453 2708* xmlrpclib_multicall.pyo( 106)    INFO: --&gt; MultiCall test.getBuddyState(6441221, {'availability': 'DoNotDisturb', 'buddy_list_md5': 'ec656156fdbf...1c399b7832a46', 'online_status_md5': 'cffc410a2102...b175fd6394f93'})
+23.453 2708* _productauthorizer.pyo( 191)    INFO: __batchGetProductAuth():  imAuthList [{'userId': 6441221, 'productId': 2224850}]
+23.453 2708* xmlrpclib_multicall.pyo( 106)    INFO: --&gt; MultiCall test.authorizeProducts2({'auths': [['userId', 'productId'], [6441221, 2224850]], 'max_supported_format': 7, 'use_extracte..._if_available': 1})
+23.453 2708*     inventorypanel.pyo(  89)    INFO: Received new inventory
+23.453 3048  loggingserverproxy.pyo(  16)    INFO: --&gt; chat.checkForInvite2({'userId': 6441221})
+23.484 2708*     inventorypanel.pyo( 117)   ERROR: __updateInventoryUi failed to add product 666631
+23.562 2480  xmlrpclib_multicall.pyo( 183)    INFO: MultiCall: batching up 3 calls: test.getImageAd(6441221), test.getBuddyState(6441221, {'availability': 'DoNotDisturb', 'buddy_list_md5': 'ec656156fdbf...1c399b7832a46', 'online_status_md5': 'cffc410a2102...b175fd6394f93'}), test.authorizeProducts2({'auths': [['userId', 'productId'], [6441221, 2224850]], 'max_supported_format': 7, 'use_extracte..._if_available': 1})
+23.906 2480  xmlrpclib_transport.pyo( 304)    INFO: XMLRPC starting to receive 1671 bytes of data
+23.906 2480  xmlrpclib_multicall.pyo( 209)    INFO: MultiCall: completed calls - server reported time 0.00000
+23.906 2480  xmlrpclib_multicall.pyo(  46)    INFO: &lt;-- MultiCall test.getImageAd(6441221) returned {'clickUrl': '', 'customers_journey_steps_id': 0, 'enabled': False, 'imageUrl': '', ...}
+23.906 2480  xmlrpclib_multicall.pyo(  46)    INFO: &lt;-- MultiCall test.getBuddyState(6441221, {'availability': 'DoNotDisturb', 'buddy_list_md5': 'ec656156fdbf...1c399b7832a46', 'online_status_md5': 'cffc410a2102...b175fd6394f93'}) returned {'buddy_list': {'blocked': [39, 1327478, 7262687, 19574601, 28259937], 'fans': [151, 380, 93078, 116901, 1159488, 1778906, ...], 'friends': [105148, 116901, 1327500, 6430115, 6330421, 5289013, ...]}, 'buddy_list_md5': '20e0c2b2c1c9...9d46e536cd514', 'online_status': '000000000000...0000000000000', 'online_status_md5': 'a80cf6443eb8...5594184e21a1c', ...}
+23.906 2708*              event.pyo(  70)    INFO: fire: &lt;imvu.account.UserAccount instance at 0x0254CFA8&gt; updateCreditBalances {'credits': '290335', 'predits': '0'}
+23.922 2480  xmlrpclib_multicall.pyo(  46)    INFO: &lt;-- MultiCall test.authorizeProducts2({'auths': [['userId', 'productId'], [6441221, 2224850]], 'max_supported_format': 7, 'use_extracte..._if_available': 1}) returned [['userId', 'productId', 'cflChecksum', 'cflSize', 'cflUrl', 'usableDirect', ...], [6441221, 2224850, 'aac62da41fa7...6f42f951cd797', 1846, 'http://useri...ata/2224850/1', True, ...], [6441221, 115658, 'ef39f46f7bf9...4ca8e7c1f150b', 2126, 'http://useri...data/115658/8', True, ...]]
+23.922 2480  _productauthorizer.pyo( 150) WARNING: gpa_onComplete: ([{'userId': 6441221, 'productId': 2224850}],), [{'info': '', 'cflChecksum': 'aac62da41fa7b816bb76f42f951cd797', 'cflSize': 1846, 'usableDirect': 1, 'userId': 6441221, 'trialTimeout': 40, 'usableDerivation': 1, 'autoAuth': False, 'cflUrl': 'http://userimages.imvu.com/productdata/2224850/1', 'usableTrial': 1, 'productId': 2224850}, {'info': '', 'cflChecksum': 'ef39f46f7bf977b0c924ca8e7c1f150b', 'cflSize': 2126, 'usableDirect': 1, 'userId': 6441221, 'trialTimeout': 40, 'usableDerivation': 1, 'autoAuth': False, 'cflUrl': 'http://userimages.imvu.com/productdata/115658/8', 'usableTrial': 1, 'productId': 115658}], None
+23.922 2708*         buddystate.pyo( 166)    INFO: __buildNewBuddyState(): new_server_buddy_state: {'buddy_list_md5': '20e0c2b2c1c910350139d46e536cd514', 'wealth_predits': 0, 'online_status': '00000000000010000000010000001000000000000000000000000000100000000000000000000000000000000000000000000000000', 'buddy_list': {'fans': [151, 380, 93078, 116901, 1159488, 1778906, 3863168, 5289013, 6333638, 6747096, 7482359, 7893566, 8061036, 8557705, 8771689, 9050859, 9052127, 9436092, 9615622, 9959622, 10277656, 11211097, 11798700, 12054148, 12554734, 12770149, 13343920, 13479892, 13932901, 14018771, 14178550, 14201255, 14363528, 14366546, 15044208, 15108233, 15250927, 15403130, 15423886, 15469745, 15554150, 15572391, 15659166, 15768977, 15772065, 16014004, 16259492, 16834530, 17460983, 17470763, 17564394, 18151522, 18151523, 18152259, 18374527, 19058569, 19426592, 20470513, 20835534, 21197608, 22251270, 22283252, 22302760, 22947532, 23502459, 23891771, 24199021, 24640517, 25684447, 26031079, 26060203, 26412415, 26663325, 29276775, 29357900, 29565552, 29910945, 31007172, 31015480, 31232335, 31307897, 31325058, 31366861, 31773758, 32556138, 32954057, 33628277, 33786123, 33917741], 'friends': [105148, 116901, 1327500, 6430115, 6330421, 5289013, 14366546, 9959622, 14201255, 12054148, 6333638, 11798700, 13932901, 6747096, 8557705, 15250927, 8061036, 14018771, 9436092, 4031531, 15108233, 13540585, 13479892, 1778906, 15403130, 12554734, 14178550, 10277656, 15272731, 15423886, 13343920, 7482359, 16014004, 16259492, 16085236, 16158338, 15044208, 14585627, 17460983, 1159488, 15469745, 15554150, 15572391, 18151522, 380, 11211097, 14363528, 17470763, 17564394, 18151523, 18152259, 19058569, 2509432, 3863168, 9050859, 19426592, 20470513, 18374527, 20835534, 7893566, 3085754, 21197608, 93078, 23502459, 24640517, 22251270, 23891771, 24199021, 22283252, 22947532, 25684447, 22302760, 26663325, 26060203, 26031079, 18786589, 15659166, 8771689, 29910945, 29565552, 151, 29276775, 15768977, 29357900, 12770149, 26412415, 9052127, 16834530, 31325058, 31232335, 31366861, 31015480, 31007172, 15772065, 32556138, 9615622, 31773758], 'blocked': [39, 1327478, 7262687, 19574601, 28259937]}, 'poll_interval': 60, 'online_status_md5': 'a80cf6443eb829e93d55594184e21a1c', 'wealth_credits': 290335, 'recent_chats': [11503681, 29417514, 30601408, 30308480, 27113251, 28412064, 27592169, 27819845, 6221667, 28272119], 'recent_chats_online': '0000001000'}
+23.984 3528  loggingserverproxy.pyo(  16)    INFO: --&gt; test.avatarInfoForIds([30601408, 11503681, 27113251, 27819845, 27592169, 29417514, ...])
+24.125 2708*        buddywindow.pyo( 348)    INFO: Showing buddy window.
+24.140 2708*          clientapp.pyo( 146)    INFO: applyProduct(): args: {'action': 'applyUiSkin'} product: &lt;pid: 2224850 hash: 39369648 uid: 6441221  type: u'UI Skin'&gt;
+24.140 2708*          clientapp.pyo( 157)    INFO: No translation table, using default.
+24.344 2708*          clientapp.pyo( 198)    INFO: No menu config table, using default.
+24.359 2708*          clientapp.pyo( 227)    INFO: No url overrides table, using default.
+24.359 2708*        buddywindow.pyo( 348)    INFO: Showing buddy window.
+24.375 2708* xmlrpclib_multicall.pyo( 106)    INFO: --&gt; MultiCall test.setCustomerPref({'field': 'uiskin', 'userId': 6441221, 'value': 2224850})
+24.437 3528  xmlrpclib_transport.pyo( 304)    INFO: XMLRPC starting to receive 866 bytes of data
+24.437 3528  loggingserverproxy.pyo(  18)    INFO: &lt;-- test.avatarInfoForIds([30601408, 11503681, 27113251, 27819845, 27592169, 29417514, ...]) returned [['userId', 'avatarName', 'isGuest', 'picUrl', 'age', 'gender', ...], [30601408, 'sexylala322', 0, 'http://useri...c11909854.jpg', 28, 'Female', ...], [11503681, 'Engine27', 0, 'http://useri...a7c3aa0cc.gif', 24, 'Male', ...], [27113251, 'BarraHavenDaron', 0, 'http://useri...ac242228e.png', 18, 'Female', ...], [27819845, 'princessofdarkness80', 0, 'http://useri...6fe8e3bf2.gif', 28, 'Female', ...], [27592169, 'XXXGrayWolfXXX', 0, 'http://useri...9775a2934.jpg', 49, 'Male', ...], ...]
+24.453 2708*  avatarinfomanager.pyo(  34)    INFO: avatarInfoForIds returned [{'hasVIPPass': '0', 'hasAccessPass': '1', 'downlo
+24.500 2708*            account.pyo( 841)    INFO: avPicForUrl(): avPicRequestCount: 1 requesting download pic_url: 'http://userimages.imvu.com/catalog/includes/modules/phpbb2/images/avatars/11503681_1850690866499da7c3aa0cc.gif'
+24.515 2708*            account.pyo( 841)    INFO: avPicForUrl(): avPicRequestCount: 2 requesting download pic_url: 'http://userimages.imvu.com/catalog/includes/modules/phpbb2/images/avatars/27113251_198415805449a4ac242228e.png'
+24.531 2708*            account.pyo( 841)    INFO: avPicForUrl(): avPicRequestCount: 3 requesting download pic_url: 'http://userimages.imvu.com/catalog/includes/modules/phpbb2/images/avatars/27819845_98234197349986fe8e3bf2.gif'
+24.578 2708*         urlhandler.pyo(  50)    INFO: Requesting URL http://userimages.imvu.com/catalog/includes/modules/phpbb2/images/avatars/11503681_1850690866499da7c3aa0cc.gif
+24.578 2708*         urlhandler.pyo(  71)    INFO: Starting request 1 http://userimages.imvu.com/catalog/includes/modules/phpbb2/images/avatars/11503681_1850690866499da7c3aa0cc.gif
+24.578 2708*         urlhandler.pyo(  50)    INFO: Requesting URL http://userimages.imvu.com/catalog/includes/modules/phpbb2/images/avatars/27113251_198415805449a4ac242228e.png
+24.578 2708*         urlhandler.pyo(  71)    INFO: Starting request 2 http://userimages.imvu.com/catalog/includes/modules/phpbb2/images/avatars/27113251_198415805449a4ac242228e.png
+24.578 2708*         urlhandler.pyo(  50)    INFO: Requesting URL http://userimages.imvu.com/catalog/includes/modules/phpbb2/images/avatars/27819845_98234197349986fe8e3bf2.gif
+24.578 2708*         urlhandler.pyo(  71)    INFO: Starting request 3 http://userimages.imvu.com/catalog/includes/modules/phpbb2/images/avatars/27819845_98234197349986fe8e3bf2.gif
+24.578 2684  loggingserverproxy.pyo(  16)    INFO: --&gt; test.avatarInfoForIds([24640517, 22251270, 39, 22302760, 4031531, 5289013, ...])
+24.875 2480  xmlrpclib_transport.pyo( 304)    INFO: XMLRPC starting to receive 172 bytes of data
+24.875 2480  xmlrpclib_multicall.pyo(  46)    INFO: &lt;-- MultiCall test.setCustomerPref({'field': 'uiskin', 'userId': 6441221, 'value': 2224850}) returned 1
+25.875 2708*         urlhandler.pyo(  65)    INFO: Finished downloading request 1 http://userimages.imvu.com/catalog/includes/modules/phpbb2/images/avatars/11503681_1850690866499da7c3aa0cc.gif
+25.875 2708*            account.pyo( 816)    INFO: avPicForUrl(): avPicRequestCount: 2 completed pic_url: 'http://userimages.imvu.com/catalog/includes/modules/phpbb2/images/avatars/11503681_1850690866499da7c3aa0cc.gif'
+25.906 2708*            account.pyo( 841)    INFO: avPicForUrl(): avPicRequestCount: 3 requesting download pic_url: 'http://userimages.imvu.com/catalog/includes/modules/phpbb2/images/avatars/28412064_1631786386498935aea1479.jpg'
+25.906 2708*         urlhandler.pyo(  50)    INFO: Requesting URL http://userimages.imvu.com/catalog/includes/modules/phpbb2/images/avatars/28412064_1631786386498935aea1479.jpg
+25.906 2708*         urlhandler.pyo(  71)    INFO: Starting request 4 http://userimages.imvu.com/catalog/includes/modules/phpbb2/images/avatars/28412064_1631786386498935aea1479.jpg
+25.922 2708*         urlhandler.pyo(  65)    INFO: Finished downloading request 2 http://userimages.imvu.com/catalog/includes/modules/phpbb2/images/avatars/27113251_198415805449a4ac242228e.png
+25.922 2708*            account.pyo( 816)    INFO: avPicForUrl(): avPicRequestCount: 2 completed pic_url: 'http://userimages.imvu.com/catalog/includes/modules/phpbb2/images/avatars/27113251_198415805449a4ac242228e.png'
+25.922 2708*            account.pyo( 841)    INFO: avPicForUrl(): avPicRequestCount: 3 requesting download pic_url: 'http://userimages.imvu.com/catalog/includes/modules/phpbb2/images/avatars/6221667_13975095449b474d5d5df5.jpg'
+25.937 2708*         urlhandler.pyo(  50)    INFO: Requesting URL http://userimages.imvu.com/catalog/includes/modules/phpbb2/images/avatars/6221667_13975095449b474d5d5df5.jpg
+25.937 2708*         urlhandler.pyo(  71)    INFO: Starting request 5 http://userimages.imvu.com/catalog/includes/modules/phpbb2/images/avatars/6221667_13975095449b474d5d5df5.jpg
+26.625 2708*         urlhandler.pyo(  65)    INFO: Finished downloading request 4 http://userimages.imvu.com/catalog/includes/modules/phpbb2/images/avatars/28412064_1631786386498935aea1479.jpg
+26.625 2708*            account.pyo( 816)    INFO: avPicForUrl(): avPicRequestCount: 2 completed pic_url: 'http://userimages.imvu.com/catalog/includes/modules/phpbb2/images/avatars/28412064_1631786386498935aea1479.jpg'
+26.640 2708*            account.pyo( 841)    INFO: avPicForUrl(): avPicRequestCount: 3 requesting download pic_url: 'http://userimages.imvu.com/catalog/includes/modules/phpbb2/images/avatars/30308480_13329709684984891e11813.jpg'
+26.640 2708*         urlhandler.pyo(  50)    INFO: Requesting URL http://userimages.imvu.com/catalog/includes/modules/phpbb2/images/avatars/30308480_13329709684984891e11813.jpg
+26.640 2708*         urlhandler.pyo(  71)    INFO: Starting request 6 http://userimages.imvu.com/catalog/includes/modules/phpbb2/images/avatars/30308480_13329709684984891e11813.jpg
+27.203 2708*         urlhandler.pyo(  65)    INFO: Finished downloading request 5 http://userimages.imvu.com/catalog/includes/modules/phpbb2/images/avatars/6221667_13975095449b474d5d5df5.jpg
+27.203 2708*         urlhandler.pyo(  65)    INFO: Finished downloading request 3 http://userimages.imvu.com/catalog/includes/modules/phpbb2/images/avatars/27819845_98234197349986fe8e3bf2.gif
+27.203 2708*            account.pyo( 816)    INFO: avPicForUrl(): avPicRequestCount: 2 completed pic_url: 'http://userimages.imvu.com/catalog/includes/modules/phpbb2/images/avatars/6221667_13975095449b474d5d5df5.jpg'
+27.203 2708*            account.pyo( 841)    INFO: avPicForUrl(): avPicRequestCount: 3 requesting download pic_url: 'http://userimages.imvu.com/catalog/includes/modules/phpbb2/images/avatars/27592169_59330686849b49775a2934.jpg'
+27.203 2708*            account.pyo( 816)    INFO: avPicForUrl(): avPicRequestCount: 2 completed pic_url: 'http://userimages.imvu.com/catalog/includes/modules/phpbb2/images/avatars/27819845_98234197349986fe8e3bf2.gif'
+27.219 2708*         urlhandler.pyo(  50)    INFO: Requesting URL http://userimages.imvu.com/catalog/includes/modules/phpbb2/images/avatars/27592169_59330686849b49775a2934.jpg
+27.219 2708*         urlhandler.pyo(  71)    INFO: Starting request 7 http://userimages.imvu.com/catalog/includes/modules/phpbb2/images/avatars/27592169_59330686849b49775a2934.jpg
+27.609 2708*         urlhandler.pyo(  65)    INFO: Finished downloading request 7 http://userimages.imvu.com/catalog/includes/modules/phpbb2/images/avatars/27592169_59330686849b49775a2934.jpg
+27.625 2708*            account.pyo( 816)    INFO: avPicForUrl(): avPicRequestCount: 1 completed pic_url: 'http://userimages.imvu.com/catalog/includes/modules/phpbb2/images/avatars/27592169_59330686849b49775a2934.jpg'
+27.672 2708*         urlhandler.pyo(  65)    INFO: Finished downloading request 6 http://userimages.imvu.com/catalog/includes/modules/phpbb2/images/avatars/30308480_13329709684984891e11813.jpg
+27.672 2708*            account.pyo( 816)    INFO: avPicForUrl(): avPicRequestCount: 0 completed pic_url: 'http://userimages.imvu.com/catalog/includes/modules/phpbb2/images/avatars/30308480_13329709684984891e11813.jpg'
+27.812 2708*        weblistener.pyo(  54)    INFO: WebListener connected
+27.812 2684  xmlrpclib_transport.pyo( 304)    INFO: XMLRPC starting to receive 4745 bytes of data
+27.969 2684  loggingserverproxy.pyo(  18)    INFO: &lt;-- test.avatarInfoForIds([24640517, 22251270, 39, 22302760, 4031531, 5289013, ...]) returned [['userId', 'avatarName', 'isGuest', 'picUrl', 'age', 'gender', ...], [24640517, 'Charer', 1, 'http://stati...7_679504.jpeg', 20, 'Female', ...], [22251270, 'cwbygarett', 1, 'http://stati...6_914322.jpeg', 14, 'Male', ...], [39, 'IMVU inc.', 0, 'http://useri...5884afd9e.jpg', 35, 'Female', ...], [22302760, 'YaWhatevers', 1, 'http://stati...0_914322.jpeg', 14, 'Male', ...], [4031531, 'serycka', 0, 'http://useri...5f87bec3e.gif', 38, 'Female', ...], ...]
+27.969 2708*  avatarinfomanager.pyo(  34)    INFO: avatarInfoForIds returned [{'hasVIPPass': '0', 'hasAccessPass': '0', 'downlo
+28.172 2708*            account.pyo( 841)    INFO: avPicForUrl(): avPicRequestCount: 1 requesting download pic_url: 'http://userimages.imvu.com/catalog/includes/modules/phpbb2/images/avatars/12770149_21031171649acdf0961afc.jpg'
+28.344 2708*            account.pyo( 841)    INFO: avPicForUrl(): avPicRequestCount: 2 requesting download pic_url: 'http://userimages.imvu.com/catalog/includes/modules/phpbb2/images/avatars/8771689_28686228049abf2206dee0.gif'
+28.422 2708*            account.pyo( 841)    INFO: avPicForUrl(): avPicRequestCount: 3 requesting download pic_url: 'http://userimages.imvu.com/catalog/includes/modules/phpbb2/images/avatars/33628277_72381632849a35540903fa.jpg'
+29.875 2708*         urlhandler.pyo(  50)    INFO: Requesting URL http://userimages.imvu.com/catalog/includes/modules/phpbb2/images/avatars/12770149_21031171649acdf0961afc.jpg
+29.875 2708*         urlhandler.pyo(  71)    INFO: Starting request 8 http://userimages.imvu.com/catalog/includes/modules/phpbb2/images/avatars/12770149_21031171649acdf0961afc.jpg
+29.875 2708*         urlhandler.pyo(  50)    INFO: Requesting URL http://userimages.imvu.com/catalog/includes/modules/phpbb2/images/avatars/8771689_28686228049abf2206dee0.gif
+29.875 2708*         urlhandler.pyo(  71)    INFO: Starting request 9 http://userimages.imvu.com/catalog/includes/modules/phpbb2/images/avatars/8771689_28686228049abf2206dee0.gif
+29.875 2708*         urlhandler.pyo(  50)    INFO: Requesting URL http://userimages.imvu.com/catalog/includes/modules/phpbb2/images/avatars/33628277_72381632849a35540903fa.jpg
+29.875 2708*         urlhandler.pyo(  71)    INFO: Starting request 10 http://userimages.imvu.com/catalog/includes/modules/phpbb2/images/avatars/33628277_72381632849a35540903fa.jpg
+29.890 2684  loggingserverproxy.pyo(  16)    INFO: --&gt; test.avatarInfoForIds([16834530, 26031079, 14201255, 12554734, 15250927, 22283252, ...])
+30.359 2708*         urlhandler.pyo(  65)    INFO: Finished downloading request 8 http://userimages.imvu.com/catalog/includes/modules/phpbb2/images/avatars/12770149_21031171649acdf0961afc.jpg
+30.359 2708*            account.pyo( 816)    INFO: avPicForUrl(): avPicRequestCount: 2 completed pic_url: 'http://userimages.imvu.com/catalog/includes/modules/phpbb2/images/avatars/12770149_21031171649acdf0961afc.jpg'
+30.375 2708*            account.pyo( 841)    INFO: avPicForUrl(): avPicRequestCount: 3 requesting download pic_url: 'http://userimages.imvu.com/catalog/includes/modules/phpbb2/images/avatars/15768977_23890732249ac6eeb5fa20.jpg'
+30.375 2708*         urlhandler.pyo(  50)    INFO: Requesting URL http://userimages.imvu.com/catalog/includes/modules/phpbb2/images/avatars/15768977_23890732249ac6eeb5fa20.jpg
+30.375 2708*         urlhandler.pyo(  71)    INFO: Starting request 11 http://userimages.imvu.com/catalog/includes/modules/phpbb2/images/avatars/15768977_23890732249ac6eeb5fa20.jpg
+30.625 2684  xmlrpclib_transport.pyo( 304)    INFO: XMLRPC starting to receive 701 bytes of data
+30.625 2684  loggingserverproxy.pyo(  18)    INFO: &lt;-- test.avatarInfoForIds([16834530, 26031079, 14201255, 12554734, 15250927, 22283252, ...]) returned [['userId', 'avatarName', 'isGuest', 'picUrl', 'age', 'gender', ...], [16834530, 'lilsexybitch16', 1, 'http://useri...be5278e8b.png', 17, 'Female', ...], [26031079, 'needluv247', 1, 'http://useri...4c1927afa.jpg', 15, 'Female', ...], [14201255, 'DANHIA01', 1, 'http://useri...59bca7d3b.jpg', 27, 'Female', ...], [12554734, 'loveablemelove', 1, 'http://useri...728ef07bf.jpg', 23, 'Female', ...], [15250927, 'Teeyj', 1, 'http://useri...be293da42.jpg', 19, 'Male', ...], ...]
+30.640 2708*  avatarinfomanager.pyo(  34)    INFO: avatarInfoForIds returned [{'hasVIPPass': '0', 'hasAccessPass': '0', 'downlo
+30.828 2708*         urlhandler.pyo(  65)    INFO: Finished downloading request 10 http://userimages.imvu.com/catalog/includes/modules/phpbb2/images/avatars/33628277_72381632849a35540903fa.jpg
+30.828 2708*            account.pyo( 816)    INFO: avPicForUrl(): avPicRequestCount: 2 completed pic_url: 'http://userimages.imvu.com/catalog/includes/modules/phpbb2/images/avatars/33628277_72381632849a35540903fa.jpg'
+30.844 2708*            account.pyo( 841)    INFO: avPicForUrl(): avPicRequestCount: 3 requesting download pic_url: 'http://userimages.imvu.com/catalog/includes/modules/phpbb2/images/avatars/93078_1832472007498d21b637fea.png'
+30.844 2708*         urlhandler.pyo(  50)    INFO: Requesting URL http://userimages.imvu.com/catalog/includes/modules/phpbb2/images/avatars/93078_1832472007498d21b637fea.png
+30.844 2708*         urlhandler.pyo(  71)    INFO: Starting request 12 http://userimages.imvu.com/catalog/includes/modules/phpbb2/images/avatars/93078_1832472007498d21b637fea.png
+31.094 2708*         urlhandler.pyo(  65)    INFO: Finished downloading request 9 http://userimages.imvu.com/catalog/includes/modules/phpbb2/images/avatars/8771689_28686228049abf2206dee0.gif
+31.094 2708*            account.pyo( 816)    INFO: avPicForUrl(): avPicRequestCount: 2 completed pic_url: 'http://userimages.imvu.com/catalog/includes/modules/phpbb2/images/avatars/8771689_28686228049abf2206dee0.gif'
+31.109 2708*            account.pyo( 841)    INFO: avPicForUrl(): avPicRequestCount: 3 requesting download pic_url: 'http://userimages.imvu.com/catalog/includes/modules/phpbb2/images/avatars/26412415_155461929949878a8c472ec.jpg'
+31.109 2708*         urlhandler.pyo(  50)    INFO: Requesting URL http://userimages.imvu.com/catalog/includes/modules/phpbb2/images/avatars/26412415_155461929949878a8c472ec.jpg
+31.109 2708*         urlhandler.pyo(  71)    INFO: Starting request 13 http://userimages.imvu.com/catalog/includes/modules/phpbb2/images/avatars/26412415_155461929949878a8c472ec.jpg
+31.250 2708*         urlhandler.pyo(  65)    INFO: Finished downloading request 11 http://userimages.imvu.com/catalog/includes/modules/phpbb2/images/avatars/15768977_23890732249ac6eeb5fa20.jpg
+31.250 2708*            account.pyo( 816)    INFO: avPicForUrl(): avPicRequestCount: 2 completed pic_url: 'http://userimages.imvu.com/catalog/includes/modules/phpbb2/images/avatars/15768977_23890732249ac6eeb5fa20.jpg'
+31.265 2708*            account.pyo( 841)    INFO: avPicForUrl(): avPicRequestCount: 3 requesting download pic_url: 'http://userimages.imvu.com/catalog/includes/modules/phpbb2/images/avatars/15572391_995621908499b62b074c2d.jpg'
+31.265 2708*         urlhandler.pyo(  50)    INFO: Requesting URL http://userimages.imvu.com/catalog/includes/modules/phpbb2/images/avatars/15572391_995621908499b62b074c2d.jpg
+31.265 2708*         urlhandler.pyo(  71)    INFO: Starting request 14 http://userimages.imvu.com/catalog/includes/modules/phpbb2/images/avatars/15572391_995621908499b62b074c2d.jpg
+31.594 2708*         urlhandler.pyo(  65)    INFO: Finished downloading request 13 http://userimages.imvu.com/catalog/includes/modules/phpbb2/images/avatars/26412415_155461929949878a8c472ec.jpg
+31.594 2708*            account.pyo( 816)    INFO: avPicForUrl(): avPicRequestCount: 2 completed pic_url: 'http://userimages.imvu.com/catalog/includes/modules/phpbb2/images/avatars/26412415_155461929949878a8c472ec.jpg'
+31.609 2708*            account.pyo( 841)    INFO: avPicForUrl(): avPicRequestCount: 3 requesting download pic_url: 'http://userimages.imvu.com/catalog/includes/modules/phpbb2/images/avatars/29357900_1321531579499349d037f6e.jpg'
+31.609 2708*         urlhandler.pyo(  50)    INFO: Requesting URL http://userimages.imvu.com/catalog/includes/modules/phpbb2/images/avatars/29357900_1321531579499349d037f6e.jpg
+31.609 2708*         urlhandler.pyo(  71)    INFO: Starting request 15 http://userimages.imvu.com/catalog/includes/modules/phpbb2/images/avatars/29357900_1321531579499349d037f6e.jpg
+32.062 2708*         urlhandler.pyo(  65)    INFO: Finished downloading request 14 http://userimages.imvu.com/catalog/includes/modules/phpbb2/images/avatars/15572391_995621908499b62b074c2d.jpg
+32.062 2708*            account.pyo( 816)    INFO: avPicForUrl(): avPicRequestCount: 2 completed pic_url: 'http://userimages.imvu.com/catalog/includes/modules/phpbb2/images/avatars/15572391_995621908499b62b074c2d.jpg'
+32.078 2708*            account.pyo( 841)    INFO: avPicForUrl(): avPicRequestCount: 3 requesting download pic_url: 'http://userimages.imvu.com/catalog/includes/modules/phpbb2/images/avatars/31773758_38911950749628dd4acbcb.png'
+32.078 2708*         urlhandler.pyo(  50)    INFO: Requesting URL http://userimages.imvu.com/catalog/includes/modules/phpbb2/images/avatars/31773758_38911950749628dd4acbcb.png
+32.078 2708*         urlhandler.pyo(  71)    INFO: Starting request 16 http://userimages.imvu.com/catalog/includes/modules/phpbb2/images/avatars/31773758_38911950749628dd4acbcb.png
+32.297 2708*         urlhandler.pyo(  65)    INFO: Finished downloading request 12 http://userimages.imvu.com/catalog/includes/modules/phpbb2/images/avatars/93078_1832472007498d21b637fea.png
+32.297 2708*            account.pyo( 816)    INFO: avPicForUrl(): avPicRequestCount: 2 completed pic_url: 'http://userimages.imvu.com/catalog/includes/modules/phpbb2/images/avatars/93078_1832472007498d21b637fea.png'
+32.297 2708*            account.pyo( 841)    INFO: avPicForUrl(): avPicRequestCount: 3 requesting download pic_url: 'http://userimages.imvu.com/catalog/includes/modules/phpbb2/images/avatars/31325058_835422259498dd397f3da2.png'
+32.297 2708*         urlhandler.pyo(  50)    INFO: Requesting URL http://userimages.imvu.com/catalog/includes/modules/phpbb2/images/avatars/31325058_835422259498dd397f3da2.png
+32.297 2708*         urlhandler.pyo(  71)    INFO: Starting request 17 http://userimages.imvu.com/catalog/includes/modules/phpbb2/images/avatars/31325058_835422259498dd397f3da2.png
+32.484 2708*         urlhandler.pyo(  65)    INFO: Finished downloading request 15 http://userimages.imvu.com/catalog/includes/modules/phpbb2/images/avatars/29357900_1321531579499349d037f6e.jpg
+32.484 2708*            account.pyo( 816)    INFO: avPicForUrl(): avPicRequestCount: 2 completed pic_url: 'http://userimages.imvu.com/catalog/includes/modules/phpbb2/images/avatars/29357900_1321531579499349d037f6e.jpg'
+32.500 2708*            account.pyo( 841)    INFO: avPicForUrl(): avPicRequestCount: 3 requesting download pic_url: 'http://userimages.imvu.com/catalog/includes/modules/phpbb2/images/avatars/9615622_61762254549b2c56700a0a.png'
+32.500 2708*         urlhandler.pyo(  50)    INFO: Requesting URL http://userimages.imvu.com/catalog/includes/modules/phpbb2/images/avatars/9615622_61762254549b2c56700a0a.png
+32.500 2708*         urlhandler.pyo(  71)    INFO: Starting request 18 http://userimages.imvu.com/catalog/includes/modules/phpbb2/images/avatars/9615622_61762254549b2c56700a0a.png
+33.562 2708*         urlhandler.pyo(  65)    INFO: Finished downloading request 16 http://userimages.imvu.com/catalog/includes/modules/phpbb2/images/avatars/31773758_38911950749628dd4acbcb.png
+33.562 2708*            account.pyo( 816)    INFO: avPicForUrl(): avPicRequestCount: 2 completed pic_url: 'http://userimages.imvu.com/catalog/includes/modules/phpbb2/images/avatars/31773758_38911950749628dd4acbcb.png'
+33.578 2708*            account.pyo( 841)    INFO: avPicForUrl(): avPicRequestCount: 3 requesting download pic_url: 'http://userimages.imvu.com/catalog/includes/modules/phpbb2/images/avatars/16834530_144595274049a9be5278e8b.png'
+33.578 2708*         urlhandler.pyo(  50)    INFO: Requesting URL http://userimages.imvu.com/catalog/includes/modules/phpbb2/images/avatars/16834530_144595274049a9be5278e8b.png
+33.578 2708*         urlhandler.pyo(  71)    INFO: Starting request 19 http://userimages.imvu.com/catalog/includes/modules/phpbb2/images/avatars/16834530_144595274049a9be5278e8b.png
+33.890 2708*         urlhandler.pyo(  65)    INFO: Finished downloading request 17 http://userimages.imvu.com/catalog/includes/modules/phpbb2/images/avatars/31325058_835422259498dd397f3da2.png
+33.890 2708*            account.pyo( 816)    INFO: avPicForUrl(): avPicRequestCount: 2 completed pic_url: 'http://userimages.imvu.com/catalog/includes/modules/phpbb2/images/avatars/31325058_835422259498dd397f3da2.png'
+33.906 2708*            account.pyo( 841)    INFO: avPicForUrl(): avPicRequestCount: 3 requesting download pic_url: 'http://userimages.imvu.com/catalog/includes/modules/phpbb2/images/avatars/15659166_20925829744978017d9d940.png'
+33.906 2708*         urlhandler.pyo(  50)    INFO: Requesting URL http://userimages.imvu.com/catalog/includes/modules/phpbb2/images/avatars/15659166_20925829744978017d9d940.png
+33.906 2708*         urlhandler.pyo(  71)    INFO: Starting request 20 http://userimages.imvu.com/catalog/includes/modules/phpbb2/images/avatars/15659166_20925829744978017d9d940.png
+34.828 2708*         urlhandler.pyo(  65)    INFO: Finished downloading request 18 http://userimages.imvu.com/catalog/includes/modules/phpbb2/images/avatars/9615622_61762254549b2c56700a0a.png
+34.828 2708*            account.pyo( 816)    INFO: avPicForUrl(): avPicRequestCount: 2 completed pic_url: 'http://userimages.imvu.com/catalog/includes/modules/phpbb2/images/avatars/9615622_61762254549b2c56700a0a.png'
+34.844 2708*            account.pyo( 841)    INFO: avPicForUrl(): avPicRequestCount: 3 requesting download pic_url: 'http://userimages.imvu.com/catalog/includes/modules/phpbb2/images/avatars/13343920_1785225046497218e583d5c.jpg'
+34.844 2708*         urlhandler.pyo(  50)    INFO: Requesting URL http://userimages.imvu.com/catalog/includes/modules/phpbb2/images/avatars/13343920_1785225046497218e583d5c.jpg
+34.844 2708*         urlhandler.pyo(  71)    INFO: Starting request 21 http://userimages.imvu.com/catalog/includes/modules/phpbb2/images/avatars/13343920_1785225046497218e583d5c.jpg
+37.125 2832           bugreport.pyo( 627)   ERROR: Error caught in main
+None
+37.125 2832           bugreport.pyo( 302)    INFO: result: ['Traceback (most recent call last)', 'File "main\\clientapp.pyo", line 2275, in runClientApp', 'File "main\\clientapp.pyo", line 2217, in runMainLoop', 'File "main\\clientapp.pyo", line 2207, in _runMainLoop', 'File "main\\clientapp.pyo", line 2003, in step', 'File "main\\clientapp.pyo", line 2040, in __profiledStep', 'File "main\\clientapp.pyo", line 1399, in __step', 'File "main\\buddywindow.pyo", line 343, in step', 'File "main\\buddywindow.pyo", line 754, in __processEvents', 'File "main\\buddywindow.pyo", line 763, in __processEvent', 'File "main\\buddywindow.pyo", line 125, in &lt;lambda&gt;', 'File "main\\menu.pyo", line 241, in dispatchCommand', 'StructuredException', 'boost_python#3ace214f1fa349e78f20de38e87ce06a1', '000128c0', '_avatarwindow#e42cf009f3e84e20853059644879c43b1', '0001fcaf', '_avatarwindow#e42cf009f3e84e20853059644879c43b1', '0001f1f7', 'boost_python#3ace214f1fa349e78f20de38e87ce06a1', '00012bd7', 'boost_python#3ace214f1fa349e78f20de38e87ce06a1', '0000cf07', 'boost_python#3ace214f1fa349e78f20de38e87ce06a1', '0000cd72', '_avatarwindow#e42cf009f3e84e20853059644879c43b1', '0001903a', '', '']
+37.125 2832           bugreport.pyo( 630)    INFO: bugkey: 'd81d24b8'
+37.125 2832             account.pyo( 317)    INFO: notifyClientSessionEvent(): blocking: True event: {'event_type': 'session_crash', 'bugkey': 'd81d24b8'}
+37.515 2832  xmlrpclib_transport.pyo( 304)    INFO: XMLRPC starting to receive 172 bytes of data</pre>
