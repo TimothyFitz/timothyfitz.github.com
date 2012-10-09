@@ -13,7 +13,7 @@ I recently wrote a post on <a href="http://timothyfitz.wordpress.com/2009/02/08/
 
 "Maybe this is just viable for a single developer ... your site will be down. A lot." - <a href="http://news.ycombinator.com/item?id=472049" target="_blank">akronim</a>
 
-"It seems like the author either has no customers or very understanding customers ... I somehow doubt the author really believes what he's writing there." - <a href="http://news.ycombinator.com/item?id=472133" target="_blank">moe</a>
+"It seems like the author either has no customers or very understanding customers ... I somehow doubt the author really believes what he's writing there." - <a href="http://news.ycombinator.com/item?id=472133" target="_blank">moe</a>
 
 ...not exactly what I was expecting. Quite the contrast to the reactions of my coworkers who read the post and thought "yeah? what's the big deal?" Surprising how quickly you can forget the problems of yesterday, even if you invested most of yourself into solving them.
 
