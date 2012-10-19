@@ -36,13 +36,13 @@ As with all hard problems, the first step is to create the proper feedback loop:
 
  
 
-[caption id="attachment_115" align="aligncenter" width="580" caption="A screenshot of our aggregate bug report data"]<img class="size-full wp-image-115 " title="Bug Report Screenshot" src="http://timothyfitz.files.wordpress.com/2009/03/bug-report-ss.png" alt="A screenshot of our aggregate bug report data" width="580" height="356" />[/caption]
+<span class="captioned_image"><img class="size-full wp-image-115 " title="Bug Report Screenshot" src="http://timothyfitz.files.wordpress.com/2009/03/bug-report-ss.png" alt="A screenshot of our aggregate bug report data" width="580" height="356" />A screenshot of our aggregate bug report data</span>
 
 If your application requires a network connection you've been gifted the two best possible metrics: logins and pings. Login metrics let you notice crashes on startup or regressions in the adoption path. These are more common than you think when they can be caused or exacerbated by 3rd party software or windows updates. Ping metrics let you measure session length and look for when a client stopped pinging without giving a reason to the server. These metrics will tell you when your crash reporting is broken, or when you've regressed in a way that breaks the utility of the application without breaking the application itself. A common example of this are deadlocks, or more generically stalls. The application hasn't crashed but for some reason isn't progressing. Once you've found a regression case like that you can implement logic to look for the failure condition and alert on it, to fail fast in the event of future regressions. For deadlocks we wrote a watcher thread that polls the stack of the main thread, if it hasn't changed for a few seconds then we report back with the state of all of the current threads. In aggregate that means graphs that trend closely with our user's frustration.
 
  
 
-[caption id="attachment_116" align="aligncenter" width="580" caption="Deadlocks or stalls, measured in millistalls (thanks nonsensical Cacti defaults)"]<img class="size-full wp-image-116" title="Deadlocks" src="http://timothyfitz.files.wordpress.com/2009/03/deadlocks.png" alt="Deadlocks or stalls, measured in millistalls (thanks nonsensical Cacti defaults)" width="580" height="201" />[/caption]
+<span class="captioned_image"><img class="size-full wp-image-116" title="Deadlocks" src="http://timothyfitz.files.wordpress.com/2009/03/deadlocks.png" alt="Deadlocks or stalls, measured in millistalls (thanks nonsensical Cacti defaults)" width="580" height="201" />Deadlocks or stalls, measured in millistalls (thanks nonsensical Cacti defaults)</span>
 
  
 

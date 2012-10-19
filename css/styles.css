@@ -70,4 +70,19 @@ a:hover {
 
 .post {
   width: 750px;
+  margin: 0 auto;
+}
+
+.captioned_image {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 1em 0;
+}
+
+.captioned_image img {
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 0.5em;
 }
