@@ -86,3 +86,12 @@ a:hover {
   margin: 0 auto;
   padding-bottom: 0.5em;
 }
+
+.comments {
+  padding-top: 6em;
+  padding-bottom: 6em;
+}
+
+.disqus {
+  display: none;
+}

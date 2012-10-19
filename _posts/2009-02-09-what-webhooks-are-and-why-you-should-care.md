@@ -19,7 +19,7 @@ Webhooks today offer a lot of value as an instant notification mechanism. Have e
 
 For all of that power, webhooks are impressively simple to implement. It's a one liner in almost every language.
 
-[sourcecode language='python']urllib.urlopen(user.webhook.url)[/sourcecode]
+{% highlight python %}urllib.urlopen(user.webhook.url){% endhighlight %}
 
 While there's a lot of value in webhooks today, it's the future that really interests me. Webhooks are composable. You'll point a webhook at a site that will call other webhooks. It might process the data, record it, fork it off to multiple webhooks or something stranger still. Yahoo Pipes tried to do this, but ultimately you were limited to what Yahoo Pipes was designed to do. Webhooks can be integrated and implemented everywhere. They piggyback the fundamental decentralized nature of the web. 
 
