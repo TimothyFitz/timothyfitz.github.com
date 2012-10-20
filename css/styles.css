@@ -2,9 +2,6 @@
 body {
   font-family: "Helvetica Neue",Arial,sans-serif;
   padding-top: 2em;
-}
-
-* {
   color: #224;
 }
 
@@ -94,4 +91,19 @@ a:hover {
 
 .disqus {
   display: none;
+}
+
+header {
+  width: 750px;
+  margin: 0 auto;
+  background: #557;
+  color: white;
+  position: relative;
+  height: 30px;
+}
+
+header h1 {
+  position: relative;
+  top: -4px;
+  font-size: 36px;
 }
