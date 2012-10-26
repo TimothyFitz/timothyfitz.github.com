@@ -1,3 +1,52 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
 
 body {
   font-family: "Helvetica Neue",Arial,sans-serif;
@@ -12,6 +61,28 @@ a {
 h2, ul {
   margin-bottom: 0.5em;
   margin-top: 0.5em;
+}
+
+/* END RESET */
+
+h1 {
+  font-size: 32px;
+  font-weight: bold;
+  margin: 0.66em 0;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+body {
+  line-height: 1.2;
+}
+
+.about ul {
+  list-style-type: disc;
+  margin-left: 40px;
 }
 
 .container {
@@ -65,9 +136,8 @@ a:hover {
   text-decoration: underline;
 }
 
-.post {
-  width: 750px;
-  margin: 0 auto;
+.post h1:first-child {
+  margin-top: 0;
 }
 
 .captioned_image {
@@ -93,13 +163,29 @@ a:hover {
   display: none;
 }
 
-header {
-  width: 750px;
+.page_frame {
+  width: 960px;
   margin: 0 auto;
-  background: #557;
+}
+
+nav {
+  float: left;
+}
+
+.content {
+  width: 700px;
+  float: right;
+}
+
+header {
+  width: 100%;
+  margin: 0 auto;
+  background: #bbc;
   color: white;
   position: relative;
   height: 30px;
+  clear: both;
+  margin-bottom: 1em;
 }
 
 header h1 {

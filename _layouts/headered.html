@@ -1,7 +1,18 @@
 ---
 layout: default
 ---
-<header>
-    <h1>Timothy Fitz</h1>
-</header>
-{{ content }}
+<div class="page_frame clearfix">
+    <header class="clearfix">
+        <h1>Timothy Fitz</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/archive.html">Archive</a></li>
+        </ul>
+    </nav>
+    <div class="content">
+        {{ content }}
+    </div>
+</div>

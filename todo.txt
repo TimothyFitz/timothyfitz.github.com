@@ -1,0 +1,5 @@
+Build side-nav
+Fix all the content encoding issues (Â)
+Update front page to include/be blog
+Move current front page into about page
+Point timothyfitz.wordpress.com at timothyfitz.com
