@@ -140,6 +140,15 @@ a:hover {
   margin-top: 0;
 }
 
+.home .post:after {
+  width: 80%;
+  height: 6px;
+  background-color: #778;
+  display: block;
+  content: "";
+  margin: 3em auto;
+}
+
 .captioned_image {
   display: block;
   width: 100%;
