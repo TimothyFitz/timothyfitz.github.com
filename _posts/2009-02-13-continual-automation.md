@@ -17,7 +17,7 @@ Most companies manage to end up with weeks of effort required to create local de
 
 How automated can this process get? At IMVU the entire setup process for our website is an SVN checkout and running a script. At that point a local instance of apache and memcache are running. Port 80 is serving up a local development copy of the website. **There is no work left. **
 
-What does this level of automation give you? Here's where things start to take off. Now I can easily install a sandbox on my home machine, on my laptop or even on an EC2 instance all without effort. I can start to parallelize my work effort: run regression tests on one machine, poke at code to understand it on the other. We can one-off install sandboxes on machines to run data crunching. This is how we've generated the numerous incarnations of rendered 3d art in our registration flow. 
+What does this level of automation give you? Here's where things start to take off. Now I can easily install a sandbox on my home machine, on my laptop or even on an EC2 instance all without effort. I can start to parallelize my work effort: run regression tests on one machine, poke at code to understand it on the other. We can one-off install sandboxes on machines to run data crunching. This is how we've generated the numerous incarnations of rendered 3d art in our registration flow.
 
 When we spin up new engineers we target a working sandbox by lunch and a typo fix live in production by end of day. **On the first day of their employment. **This is one of our best ways to demonstrate our cultural differences from most development shops.
 
