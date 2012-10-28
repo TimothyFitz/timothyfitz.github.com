@@ -177,15 +177,6 @@ a:hover {
   margin: 0 auto;
 }
 
-nav {
-  float: left;
-}
-
-.content {
-  width: 700px;
-  float: right;
-}
-
 header {
   width: 100%;
   margin: 0 auto;
