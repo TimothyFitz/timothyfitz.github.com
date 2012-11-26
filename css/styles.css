@@ -209,3 +209,22 @@ header h1 {
   top: -4px;
   font-size: 36px;
 }
+
+
+
+.post strong {
+  font-weight: bold;
+}
+
+.post p {
+  margin-bottom: 1em;
+  line-height: 1.3;
+}
+
+.post h2 {
+  margin-top: 1em;
+}
+
+.post .captioned_image {
+  color: #668;
+}
