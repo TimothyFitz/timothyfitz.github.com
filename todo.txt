@@ -1,3 +1,1 @@
-Link titles to permalinks from homepage.
-Make blog posts look better (p spacing, etc) post reset CSS
 Point timothyfitz.wordpress.com at timothyfitz.com
