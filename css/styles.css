@@ -124,6 +124,21 @@ body {
   -webkit-box-shadow: inset 0 0 20px rgba(255,255,255,0.5);
 }
 
+nav .headshot {
+  width: 100px;
+  height: 78px;
+  background-size: 100px 78px;
+}
+
+nav ul:before {
+  width: 80%;
+  height: 1.8px; /* Need this or else sometimes it's rounded to 3px tall ;_; */
+  background-color: #778;
+  display: block;
+  content: "";
+  margin: 0.5em 0;
+}
+
 a {
   font-weight: bold;
 }
@@ -187,6 +202,7 @@ header {
   clear: both;
   margin-bottom: 1em;
 }
+
 
 header h1 {
   position: relative;
