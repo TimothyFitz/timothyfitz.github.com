@@ -2,3 +2,4 @@ ame: Timothy Fitz
 description:
 url: http://TimothyFitz.com
 pygments: true
+permalink: /:year/:month/:day/:title/
