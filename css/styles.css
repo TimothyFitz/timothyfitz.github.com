@@ -132,7 +132,7 @@ nav .headshot {
 
 nav ul:before {
   width: 80%;
-  height: 1.8px; /* Need this or else sometimes it's rounded to 3px tall ;_; */
+  height: 2px;
   background-color: #778;
   display: block;
   content: "";
