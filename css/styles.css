@@ -228,3 +228,12 @@ header h1 {
 .post .captioned_image {
   color: #668;
 }
+
+.post ul {
+  list-style-type: disc;
+  margin-bottom: 2em;
+}
+
+.post ul li {
+  margin-bottom: 0.5em;
+}
