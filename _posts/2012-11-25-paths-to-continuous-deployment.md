@@ -1,6 +1,6 @@
 --- 
 layout: post
-title: Paths to Continuous Deployment
+title: Getting Started with Continuous Deployment
 
 type: post
 published: true
