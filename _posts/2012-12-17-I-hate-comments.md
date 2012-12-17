@@ -24,9 +24,22 @@ def incrementCounter(self):
     self.counter = min(self.counter + 1, MAX_COUNTER)
 {% endhighlight %}
 
-This, fundamentally, is the reason why I hate comments. What started with nothing but good intentions became an outright lie, and will eventually cause harm. Someone will read the comment, make the wrong assumptions and add bugs to the code. What should be done instead? A unit test. A simple unit test would not only provide significantly more value, but it will also evolve with the system. 
+This, fundamentally, is the reason why I hate comments. What started with nothing but good intentions became an outright lie, and will eventually cause harm. Someone will read the comment, make the wrong assumptions and add bugs to the code. What should be done instead? A unit test. A simple unit test would not only provide significantly more value, but it will also evolve with the system:
 
-Another extremely common case is the "this shouldn't happen" comment.
+{% highlight python %}
+def test_incrementCounter_never_greater_than_5(self):
+    c = Counter()
+    for x in range(6):
+        c.incrementCounter()
+
+    assertEqual(c.getCounter(), 5)
+{% endhighlight %}
+
+Now what was a comment is a test case, and the results can be relied on over time. If the code changes for whatever reason, the test will fail, causing it to be updated.
+
+**Tests are living comments.**
+
+Another extremely common case is the "this shouldn't happen" comment:
 
 {% highlight python %}
 def acceptPayment(self, amount):
@@ -42,13 +55,13 @@ def acceptPayment(self, amount):
     self.balance -= amount
 {% endhighlight %}
 
-This code is dramatically more readable. Not because I can visually parse Python faster than I can parse human language, but because when I parse "assert amount >= 0" I can be certain of that condition. When I parse "Amount should never be less than 0" what I actually read is "I'm really hopeful that amount is never less than 0, but it could probably happen under certain conditions". Now I have to think through two cases of the code, amount >= 0 and amount < 0.
+This code is dramatically more readable. Not because I'm claiming I can visually parse Python faster than I can parse human language, but because when I parse "assert amount >= 0" I can be certain of that condition. When I parse "Amount should never be less than 0" what I actually read is "I'm really hopeful that amount is never less than 0, but it could probably happen under certain conditions". Now I have to think through two cases of the code, amount >= 0 and amount < 0.
 
-These simple examples are just the start. The same principles scale up to complex code with giant amounts of comments. Almost universally when I see large blocks of comments, I find the test coverage to be both missing coverage and not designed to be readable. Ater adding significant amounts of tests, renaming test cases to be human readable and rearranging the test file to be read in-order then the comments become unnecessary. As a corollary, if you and your team aren't generally reading tests as source documentation, start doing that today.
+These simple examples are just the start. The same principles scale up to complex code with giant amounts of comments. Almost universally when I see large blocks of comments, I find the tests lacking. The tests aren't covering important functionality and they're unreadable. Ater adding significant amounts of tests, renaming test cases to be human readable and rearranging the test file to be read in-order then the comments become unnecessary. As a corollary, if you and your team aren't generally reading tests as source documentation, start doing that today.
 
-I have seen heavily-commented code work well, but I find it only works in a few narrow contexts. The lone-programmer scenario, like Knuth's literate programming is one. Another is code bases with a few people who spend a significant amount of time reading and reviewing every commit. In both cases, I think it works but the time spent on maintaining the comments would be much more effectively spent maintaining awesome automated tests.
+I have seen heavily-commented code work well, but I find it only works in a few narrow contexts. The lone-programmer scenario, like Knuth's [literate programming](http://en.wikipedia.org/wiki/Literate_programming) is one. Another is code bases with a few people who spend a significant amount of time reading and reviewing every commit. In both cases, I think it works but the time spent maintaining the comments would be much more effectively spent maintaining awesome automated tests.
 
-Comments are a crutch. Unfortunately, sometimes languages break your leg. You need the crutch. The more you optimize your code away from readability and towards performance, the more you'll end up needing comments. Conversely, the more you'll need to pay attention to the accuracy of you commenting. A good example of this is python's [garbage collection module](http://hg.python.org/cpython/file/fd57dbfa5765/Modules/gcmodule.c). It's complicated and performance critical C code, and benefits from long-form high level comments at the top of most functions. The value of these long form comments is proportional to the number of people reading your code, and in an opensource project that could be huge. Depending on the size of your company, you'll probably never come close to the number of people who have read gcmodule.c.
+Comments are a crutch. Unfortunately, sometimes languages break your leg. You need the crutch. The more you optimize your code away from readability and towards performance, the more you'll end up needing comments. Additionally, you'll need to pay that much more attention to the accuracy of your comments every time you change the code. A good example of this is python's [garbage collection module](http://hg.python.org/cpython/file/fd57dbfa5765/Modules/gcmodule.c). It's complicated and performance-critical C code, and benefits from long-form high level comments at the top of most functions. The answer is to not write C code (or other low-level-over-readability languages) unless you absolutely have to.
 
 Finally, when I see a comment I see it as a challenge: **can I make code that is as readable as the comment** and dissolves the need for the comment's text? In the cases above the assertions and automated tests needed were straightforward and obvious. In real code it'll be much more complex and nasty. When I succeed at removing a comment, I've made a significant improvement to the codebase.
 
