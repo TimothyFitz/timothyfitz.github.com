@@ -192,11 +192,11 @@ header {
   width: 100%;
   margin: 0 auto;
   background: #bbc;
-  color: white;
   position: relative;
   height: 30px;
   clear: both;
   margin-bottom: 1em;
+  color: white;
 }
 
 
@@ -206,7 +206,9 @@ header h1 {
   font-size: 36px;
 }
 
-
+header a {
+  color: white;
+}
 
 .post strong {
   font-weight: bold;
