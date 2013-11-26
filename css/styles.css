@@ -245,3 +245,12 @@ header a {
 em {
   font-style: italic;
 }
+
+.post .date {
+  color: #99B;
+}
+
+.post .author {
+  color: #99B;
+  font-size: 80%;
+}
