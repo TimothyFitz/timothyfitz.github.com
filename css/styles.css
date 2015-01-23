@@ -76,6 +76,12 @@ h2 {
   font-weight: bold;
 }
 
+h3 {
+  font-size: 1.05em;
+  color: #668;
+  font-weight: bold;
+}
+
 body {
   line-height: 1.2;
 }
