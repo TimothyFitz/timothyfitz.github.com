@@ -15,7 +15,7 @@ When the code is deployed in production two weeks later it causes the entire sit
 
 Alex curses luck, blames human infallibility, inevitable cost of software engineering and moves on to the next task.
 
-This story is the day-to-day of most startups I know. It sucks. Alex has a problem and she doesn't even know it. Her development practices are unsustainable. "Stupid mistakes" like the one she made increase as the product grows more complex and as the team gets larger. Alex needs to switch to a scalable solution.
+This story is the day-to-day of most startups I know. It sucks. Alex has a problem and she doesn't even know it. Her development practices are unsustainable. "Stupid mistakes" like the one she made happen more frequently as the product grows more complex and as the team gets larger. Alex needs to switch to a scalable solution.
 
 Before I get to the solution, let me tell you about some common non-solutions. While these are solutions to real problems, they aren't the solution to Alex's problem.
 
@@ -32,7 +32,7 @@ Automated testing is great. More automated testing is even better. No amount of 
 Great practices. They'll increase code quality, prevent defects and educate your developers. While they can go a long way to mitigating defects, ultimately they're limited by the fact that while two humans are better than one, they're still both human. These techniques only catch the failures your organization as a whole already was capable of discovering.
 
 5. Ship more infrequently
-While this may decrease downtime (things break and you roll back), the cost on development time from work and rework will be large, and mistakes will continue to slip through. The natural tendency will be to ship even more infrequently, until you aren't shipping at all. Then you've gone and forced yourself into a total rewrite. Which will also be doomed.
+While this may decrease downtime (things break and you roll back), the cost on development time from work and rework will be large, and mistakes will continue to slip through. The natural tendency will be to ship even more infrequently, until you aren't shipping at all. Then you're forced to do a total rewrite. Which will also be doomed.
 
 So what should Alex do? Continuously deploy. Every commit should be instantly deployed to production. Let's walk through her story again, assuming she had such an ideal implementation of Continuous Deployment.
 Alex commits. Minutes later warnings go off that the cluster is no longer healthy. The failure is easily correlated to Alex's change and her change is reverted. Alex spends minimal time debugging, finding the now obvious typo with ease. Her changes still caused a failure cascade, but the downtime was minimal.
