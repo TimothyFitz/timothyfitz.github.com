@@ -1,11 +1,3 @@
-
-Copy http://TimothyFitz.com/servers
-
-
-
-
-
-
 [global]
 http-proxy-exceptions = *.ge.com, 3.*
 http-proxy-host = iss-americas-pitc-cincinnatiz.proxy.corporate.ge.com
