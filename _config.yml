@@ -1,5 +1,5 @@
 name: Timothy Fitz
 description:
 url: http://TimothyFitz.com
-pygments: true
+highlighter: rouge
 permalink: /:year/:month/:day/:title/
