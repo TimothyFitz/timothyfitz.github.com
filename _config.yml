@@ -3,3 +3,5 @@ description:
 url: http://TimothyFitz.com
 highlighter: rouge
 permalink: /:year/:month/:day/:title/
+gems:
+  - jekyll-redirect-from

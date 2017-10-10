@@ -6,6 +6,8 @@ type: post
 published: true
 ---
 
+## tl;dr: comments are a crutch. replace them with code. it's easier than you think.
+
 I delete comments when I come across them. Comments are a crutch, to be used sparingly and only after all other options have been exhuasted. Comments are used for numerous purposes, so I'm going to enumerate the worst offenders:
 
 {% highlight python %}
@@ -65,4 +67,3 @@ Comments are a crutch. Unfortunately, sometimes languages break your leg. You ne
 
 Finally, when I see a comment I see it as a challenge: **can I make code that is as readable as the comment** and dissolves the need for the comment's text? In the cases above the assertions and automated tests needed were straightforward and obvious. In real code it'll be much more complex and nasty. When I succeed at removing a comment, I've made a significant improvement to the codebase.
 
-## tl;dr: comments are crutch. delete them. replace them with code that *does* instead of *says*.
