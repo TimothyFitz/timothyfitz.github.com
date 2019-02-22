@@ -3,7 +3,7 @@ layout: post
 title: I hate comments
 
 type: post
-published: true
+published: false
 ---
 
 ## tl;dr: comments are a crutch. replace them with code. it's easier than you think.
