@@ -6,6 +6,7 @@ title: Timothy Fitz
 {% for post in site.posts %}
   <div class="post">
     <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+    <div class="date">{{ post.date | date: "%Y %b %d" }}</div>
     {{ post.content }}
   </div>
 {% endfor %}
